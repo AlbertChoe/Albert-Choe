@@ -184,6 +184,10 @@ nav {
   position: relative;
 }
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 120px;
+  }
+
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -620,7 +624,7 @@ footer {
   max-width: 600px;
   color: var(--text-color);
   font-size: 1.2rem;
-  line-height: 1.7;
+  line-height: 1.8;
   margin-bottom: 20px;
 }
 
@@ -669,6 +673,7 @@ footer {
 .cv-button:hover {
   color: var(--bg-color);
   background-color: var(--text-color);
+  text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-blue);
   box-shadow: 0 12px 24px rgba(0, 243, 255, 0.5),
     0 12px 24px rgba(255, 0, 255, 0.5);
 }
