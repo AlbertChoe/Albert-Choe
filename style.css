@@ -589,6 +589,69 @@ footer {
   background-color: rgba(10, 10, 10, 0.8);
   text-align: center;
   padding: 20px 0;
+  position: relative;
+  color: var(--text-color);
+}
+.footer-description {
+  margin: 10px 0;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-contact a {
+  color: var(--neon-blue);
+  text-decoration: none;
+}
+.footer-contact a:hover {
+  color: var(--neon-pink);
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 6px var(--neon-blue));
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-links a {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .about-me {
@@ -681,4 +744,54 @@ footer {
 .cv-button span {
   position: relative;
   z-index: 1;
+}
+
+.download-cv-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  color: var(--text-color);
+  background-color: var(--neon-blue);
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.download-cv-button:hover {
+  background-color: var(--neon-pink);
+  transform: scale(1.05);
+}
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 10, 0.8);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--neon-blue), var(--neon-pink));
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, var(--neon-pink), var(--neon-blue));
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--neon-blue) rgba(10, 10, 10, 0.8);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--neon-blue);
+  border-radius: 10px;
+  border: 3px solid rgba(10, 10, 10, 0.8);
 }
