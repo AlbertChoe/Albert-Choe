@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Albert</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
   <body>
     <header>
@@ -39,7 +40,7 @@
                 <span>View My Work</span>
                 <div class="liquid"></div>
               </a>
-              <a href="/path-to-cv.pdf" class="cv-button" download>
+              <a href="/doc/CV_Albert.pdf" class="cv-button" download>
                 <span>Get My CV</span>
               </a>
             </div>
@@ -75,7 +76,7 @@
               <p>
                 I believe in hard work, determination, and the power of teamwork. My ability to communicate effectively and collaborate with others has always been a key to achieving positive results. I am always eager to learn new things, constantly pushing myself to grow both personally and professionally.
               </p>
-              <a href="/path-to-cv.pdf" class="download-cv-button" download>Download My CV</a>
+              <a href="doc/CV_Albert.pdf" class="download-cv-button" download>Download My CV</a>
             </div>
           </div>
         </div>
@@ -86,65 +87,105 @@
           <h2 class="section-title">My Projects</h2>
           <div class="project-grid">
             <div class="project-card">
-              <img
-                src="images/SeaStudy.png"
-                alt="Project 1"
-                loading="lazy"
-              />
+              <img src="images/SeaStudy.png" alt="Project 1" loading="lazy" />
               <div class="project-info">
                 <h3>SeaStudy</h3>
-                <p>A futuristic city-building game with neon aesthetics</p>
+                <p>Seatudy is an educational platform backend built with Golang, Gin, and PostgreSQL, offering course management, user authentication, progress tracking, and a review system, all with secure API services.</p>
+                <div class="project-skills">
+                  <span class="skill-tag">Golang</span>
+                  <span class="skill-tag">Gin Gonic</span>
+                  <span class="skill-tag">PostgreSQL</span>
+                  <span class="skill-tag">Supabase</span>
+                  <span class="skill-tag">CloudFlare R2</span>
+                </div>
+                <a href="https://github.com/AlbertChoe/Seatudy-Backend" target="_blank" class="github-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
               </div>
             </div>
+      
             <div class="project-card">
-              <img
-              loading="lazy"
-                src="images/apaKek.jpg"
-                alt="Project 2"
-              />
+              <img src="images/apaKek.jpg" alt="Project 2" loading="lazy" />
               <div class="project-info">
                 <h3>ApaKek</h3>
-                <p>A sleek, modern dashboard for cybersecurity monitoring</p>
+                <p>A fingerprint matching application using KMP, Boyer-Moore, and Levenshtein Distance algorithms for pattern recognition and similarity detection.</p>
+                <div class="project-skills">
+                  <span class="skill-tag">.Net SDK</span>
+                  <span class="skill-tag">WPF</span>
+                  <span class="skill-tag">Docker</span>
+                </div>
+                
+                <a href="https://github.com/AlbertChoe/Tubes3_apaKek" target="_blank" class="github-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
               </div>
             </div>
+      
             <div class="project-card">
-              <img
-              loading="lazy"
-                src="images/Hero.JPG"
-                alt="Project 3"
-              />
+              <img src="images/Stima.jpg" alt="Project 3" loading="lazy" />
               <div class="project-info">
-                <h3>Holo-Chat</h3>
-                <p>An AR-powered holographic chat application</p>
+                <h3>WikiRace Game</h3>
+                <p>A web application that utilizes BFS and IDS algorithms to find the shortest path between Wikipedia URLs.</p>
+                <div class="project-skills">
+                  <span class="skill-tag">NextJs</span>
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Golang</span>
+                  <span class="skill-tag">Gin Gonic</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">Tailwind</span>
+                  <span class="skill-tag">TypeScript</span>
+                </div>
+                <a href="https://github.com/AlbertChoe/WikiRace-Game" target="_blank" class="github-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                
               </div>
             </div>
+      
             <div class="project-card">
-              <img
-              loading="lazy"
-                src="images/Hero.JPG"
-                alt="Project 3"
-              />
+              <img src="images/Algeo2.jpg" alt="Project 4" loading="lazy" />
               <div class="project-info">
-                <h3>Holo-Chat</h3>
-                <p>An AR-powered holographic chat application</p>
+                <h3>Snap Twins</h3>
+                <p>SnapTwins is a web-based CBIR system utilizing Python, Flask, React, and Tailwind to retrieve images based on color and texture extraction, supporting uploads by camera, folder, and web scraping with caching and PDF reports.</p>
+                <div class="project-skills">
+                  <span class="skill-tag">Flask</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Tailwind</span>
+                </div>
+              
+                <a href="https://github.com/AlbertChoe/SnapTwins" target="_blank" class="github-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      
+      
 
       <section id="skills" class="skills">
         <div class="container">
           <h2 class="section-title">My Skills</h2>
           <div class="skills-list">
-            <div class="skill-item">HTML5</div>
-            <div class="skill-item">CSS3</div>
             <div class="skill-item">JavaScript</div>
+            <div class="skill-item">TypeScript</div>
+            <div class="skill-item">NextJs</div>
             <div class="skill-item">React</div>
-            <div class="skill-item">Node.js</div>
-            <div class="skill-item">WebGL</div>
-            <div class="skill-item">Three.js</div>
-            <div class="skill-item">AR/VR</div>
+            <div class="skill-item">NodeJs</div>
+            <div class="skill-item">Tailwind</div>
+            <div class="skill-item">Express</div>
+            <div class="skill-item">Golang</div>
+            <div class="skill-item">Gin GONIC</div>
+            <div class="skill-item">.NET</div>
+            <div class="skill-item">C</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">PostgreSQL</div>
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
           </div>
         </div>
       </section>

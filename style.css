@@ -543,6 +543,29 @@ nav {
   color: var(--neon-green);
 }
 
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 14px;
+  color: var(--text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: var(--neon-blue);
+  box-shadow: 0 0 10px var(--neon-blue);
+}
+
 .skills::before {
   content: "";
   position: absolute;
@@ -573,15 +596,6 @@ nav {
   font-size: 18px;
   font-family: "Orbitron", sans-serif;
   color: var(--neon-green);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.contact form {
-  max-width: 600px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 40px;
-  border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -683,12 +697,17 @@ footer p {
 }
 
 .about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex: 1 1 500px;
   max-width: 600px;
   color: var(--text-color);
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .about-text p {
@@ -794,4 +813,28 @@ footer p {
   background-color: var(--neon-blue);
   border-radius: 10px;
   border: 3px solid rgba(10, 10, 10, 0.8);
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin-top: 10px;
+  background-color: #1c1c1c;
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.github-link i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.github-link:hover {
+  background-color: var(--neon-blue);
+  color: #ffffff;
 }
