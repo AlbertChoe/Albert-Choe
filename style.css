@@ -803,18 +803,6 @@ footer p {
   background: linear-gradient(45deg, var(--neon-pink), var(--neon-blue));
 }
 
-/* For Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--neon-blue) rgba(10, 10, 10, 0.8);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--neon-blue);
-  border-radius: 10px;
-  border: 3px solid rgba(10, 10, 10, 0.8);
-}
-
 .github-link {
   display: inline-flex;
   align-items: center;
