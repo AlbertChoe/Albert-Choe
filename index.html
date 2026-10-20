@@ -2,515 +2,570 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f8f5" />
     <meta
       name="description"
-      content="Albert Choe's professional portfolio: backend engineering, full-stack projects, experience, education, and selected work."
+      content="Albert — software engineer building reliable backends and thoughtful digital experiences. Explore projects, experience, and AWS certification."
     />
-    <meta name="author" content="Albert Choe" />
-    <meta
-      name="keywords"
-      content="Albert Choe, backend engineer, full-stack developer, Golang, Ruby on Rails, Next.js, PostgreSQL, software engineer portfolio"
-    />
-    <meta property="og:title" content="Albert Choe - Backend Engineer" />
+    <meta name="author" content="Albert" />
+    <meta property="og:title" content="Albert — Software Engineer" />
     <meta
       property="og:description"
-      content="Backend and full-stack software engineer focused on reliable APIs, distributed systems, and practical product delivery."
+      content="Thoughtful code. Real-world impact. Backend systems, full-stack products, and the work behind them."
     />
     <meta property="og:url" content="https://albert-choe.vercel.app/" />
     <meta property="og:type" content="website" />
-    <title>Albert Choe- Backend Engineer</title>
+    <title>Albert — Software Engineer</title>
+    <link rel="icon" href="icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
+    <svg
+      class="svg-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <symbol id="arrow" viewBox="0 0 24 24">
+          <path d="M5 12h14M13 6l6 6-6 6" />
+        </symbol>
+        <symbol id="arrow-up" viewBox="0 0 24 24">
+          <path d="M6 18 18 6M6 6h12v12" />
+        </symbol>
+        <symbol id="download" viewBox="0 0 24 24">
+          <path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4" />
+        </symbol>
+        <symbol id="plus" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5v14" />
+        </symbol>
+        <symbol id="close" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M6 18 18 6" />
+        </symbol>
+      </defs>
+    </svg>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <nav class="nav container" aria-label="Primary navigation">
-        <a class="brand" href="#home" aria-label="Albert Choe home">
-          <!-- <span class="brand-mark">AC</span> -->
-          <span>Albert</span>
-        </a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label
-          for="nav-toggle"
-          class="nav-menu-button"
-          aria-label="Toggle navigation"
+      <nav class="container nav" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Albert home"
+          >Albert<span class="brand-period">.</span></a
         >
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <div class="nav-links">
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
-          <a href="doc/CV_Albert.pdf" download>CV</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span>Menu</span><span class="menu-lines" aria-hidden="true"></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#projects"
+            >Work<span class="nav-dot" aria-hidden="true"></span
+          ></a>
+          <a href="#experience"
+            >Experience<span class="nav-dot" aria-hidden="true"></span
+          ></a>
+          <a href="#about"
+            >About<span class="nav-dot" aria-hidden="true"></span
+          ></a>
+          <a class="nav-contact" href="#contact"
+            >Let’s talk
+            <svg class="icon" aria-hidden="true"><use href="#arrow-up" /></svg
+          ></a>
         </div>
       </nav>
     </header>
-
-    <main>
-      <section id="home" class="hero section">
-        <div class="container hero-grid">
+    <main id="main">
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div class="hero-main">
           <div class="hero-copy">
-            <h1>Backend Engineer & Full-Stack Developer</h1>
-            <p class="hero-lede">
-              I build reliable APIs, real-time backend workflows, and
-              product-facing web applications with Golang, Ruby on Rails,
-              Next.js, PostgreSQL, and cloud-native tooling.
+            <p class="intro entrance">
+              Hi, I’m Albert <span class="intro-line" aria-hidden="true"></span>
             </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="doc/CV_Albert.pdf" download
-                >Download CV</a
+            <h1 id="hero-title">
+              <span class="title-line"><span>Thoughtful code.</span></span
+              ><span class="title-line"
+                ><span class="sage">Real-world impact.</span></span
               >
-              <a class="button button-secondary" href="#projects"
-                >View Projects</a
-              >
+            </h1>
+            <p class="hero-description entrance">
+              Software engineer building reliable backends<br
+                class="desktop-break"
+              />
+              and thoughtful digital experiences.<br />Based in Indonesia.
+              Building with purpose.
+            </p>
+            <div class="hero-actions entrance">
+              <a class="button button-primary" href="#projects"
+                >View selected work
+                <svg class="icon" aria-hidden="true"><use href="#arrow" /></svg
+              ></a>
+              <a
+                class="download-link"
+                href="doc/CV_Albert.pdf"
+                download="Albert_CV.pdf"
+                >Download CV
+                <svg class="icon" aria-hidden="true">
+                  <use href="#download" /></svg
+              ></a>
             </div>
           </div>
-          <aside class="profile-card" aria-label="Profile summary">
-            <div class="profile-image-wrap">
+          <figure class="portrait entrance">
+            <div class="portrait-outline" aria-hidden="true"></div>
+            <div class="portrait-image">
               <img
-                src="images/Hero.webp"
-                alt="Portrait of Albert Choe"
-                class="profile-image"
-                loading="eager"
+                src="images/portrait-graduation.jpg"
+                width="1108"
+                height="1477"
+                alt="Albert in graduation attire at Institut Teknologi Bandung"
+                fetchpriority="high"
               />
             </div>
-            <div class="profile-details">
-              <h2>Albert</h2>
-              <p>
-                Informatics Engineering student at ITB, focused on backend
-                systems, software engineering, and AI-enabled products.
-              </p>
-              <div class="contact-list" aria-label="Contact links">
-                <a href="mailto:albert.choe73@gmail.com"
-                  >albert.choe73@gmail.com</a
-                >
-                <a
-                  href="https://www.linkedin.com/in/albertchoe2004/"
-                  target="_blank"
-                  rel="noreferrer"
-                  >LinkedIn</a
-                >
-                <a
-                  href="https://github.com/AlbertChoe"
-                  target="_blank"
-                  rel="noreferrer"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </aside>
+            <figcaption>
+              <span>Albert</span
+              ><span>Software Engineer<br />Backend &amp; Full-stack</span>
+            </figcaption>
+            <span class="portrait-corner" aria-hidden="true">↗</span>
+          </figure>
+        </div>
+        <div class="hero-footer entrance">
+          <a href="#projects"
+            >Scroll to explore <span aria-hidden="true">↓</span></a
+          >
         </div>
       </section>
 
-      <section id="about" class="section about-section">
-        <div class="container split-section">
-          <div>
-            <p class="section-label">About</p>
-            <h2>Engineering with product context.</h2>
+      <section
+        id="projects"
+        class="section container"
+        aria-labelledby="work-title"
+      >
+        <div class="section-top reveal">
+          <p class="section-index">01 <span>/</span> SELECTED WORK</p>
+          <p class="section-note">Ideas, built into something useful.</p>
+        </div>
+        <div class="heading-row reveal">
+          <h2 id="work-title">
+            A few things<br />I’ve built<span class="sage">.</span>
+          </h2>
+          <p>
+            From the systems behind the scenes<br />to the experience on the
+            screen.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project project-featured reveal">
+            <div class="project-title-row">
+              <h3><a href="#oxy-details">Oxy Reflexy</a></h3>
+              <a
+                class="circle-link"
+                href="#oxy-details"
+                aria-label="Explore Oxy Reflexy"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#arrow-up" /></svg
+              ></a>
+            </div>
+            <p class="project-description">
+              A complete toolkit for daily business operations. POS, inventory,
+              therapist commissions, and financial reporting, connected in one
+              application.
+            </p>
+            <div class="tags" aria-label="Oxy technology stack">
+              <span>Go</span><span>React</span><span>TypeScript</span
+              ><span>PostgreSQL</span>
+            </div>
+            <details class="project-details" id="oxy-details">
+              <summary>
+                Inside the project
+                <svg class="icon" aria-hidden="true"><use href="#plus" /></svg>
+              </summary>
+              <div class="details-content">
+                <p class="small-label">FULL-STACK DEVELOPER · 2026</p>
+                <h4>Built around the way a business works.</h4>
+                <p>
+                  Oxy Reflexy brings reflexology business workflows together,
+                  from customer management and treatment sales to stock
+                  movements and therapist commissions.
+                </p>
+                <ul>
+                  <li>Transaction-safe payment and stock updates.</li>
+                  <li>Cash-ledger tracking for day-to-day operations.</li>
+                  <li>
+                    Daily and monthly financial reports with Excel exports.
+                  </li>
+                </ul>
+                <p class="project-private">
+                  Go · Gin · React · TypeScript · PostgreSQL · Docker
+                </p>
+              </div>
+            </details>
+          </article>
+          <div class="project-secondary">
+            <article class="project reveal">
+              <div class="project-title-row">
+                <h3>
+                  <a
+                    href="https://github.com/orgs/DevGo-Comfest/repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Seatudy</a
+                  >
+                </h3>
+                <span class="project-year">2024</span>
+              </div>
+              <p class="project-description">
+                Helping students and instructors manage courses and keep
+                learning in motion.
+              </p>
+              <div class="tags">
+                <span>Go</span><span>REST APIs</span><span>Kotlin</span>
+              </div>
+            </article>
+            <article class="project reveal">
+              <div class="project-title-row">
+                <h3>
+                  <a
+                    href="https://github.com/Hand-TBN1/hand-backend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Hand</a
+                  >
+                </h3>
+                <span class="project-year">2024</span>
+              </div>
+              <p class="project-description">
+                Backend services and frontend features for a mental health
+                consultation platform.
+              </p>
+              <div class="tags">
+                <span>Go</span><span>Next.js</span><span>PostgreSQL</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <details class="archive reveal">
+          <summary>
+            More explorations
+            <span
+              >Algorithms, search &amp; experiments
+              <svg class="icon" aria-hidden="true"><use href="#plus" /></svg
+            ></span>
+          </summary>
+          <div class="archive-list">
+            <a
+              href="https://github.com/ChaiGans/Tubes2_BarengApin"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span>WikiRace <small>Hyperlink Search · 2024</small></span>
+              <p>Finding paths between Wikipedia pages with BFS and IDS.</p>
+              <svg class="icon" aria-hidden="true"><use href="#arrow-up" /></svg
+            ></a>
+            <a
+              href="https://github.com/AlbertChoe/Algeo02-22055/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span>SnapTwins <small>Image Retrieval</small></span>
+              <p>Exploring image similarity through color and texture.</p>
+              <svg class="icon" aria-hidden="true"><use href="#arrow-up" /></svg
+            ></a>
+            <a
+              href="https://github.com/AlbertChoe/Tubes3_apaKek"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span>ApaKek <small>Fingerprint Matching · 2024</small></span>
+              <p>
+                Pattern matching with KMP, Boyer-Moore, and Levenshtein
+                distance.
+              </p>
+              <svg class="icon" aria-hidden="true"><use href="#arrow-up" /></svg
+            ></a>
+          </div>
+        </details>
+      </section>
+
+      <section
+        id="experience"
+        class="experience-section section"
+        aria-labelledby="experience-title"
+      >
+        <div class="container">
+          <div class="section-top reveal">
+            <p class="section-index">02 <span>/</span> THE JOURNEY</p>
+            <p class="section-note">
+              Learning by building. Growing with teams.
+            </p>
+          </div>
+          <div class="experience-layout">
+            <div class="experience-intro reveal">
+              <h2 id="experience-title">
+                Good work.<br />Good people<span class="sage">.</span>
+              </h2>
+              <p>
+                Experience across backend systems,<br />real-time products, and
+                collaborative teams.
+              </p>
+              <a
+                class="text-link"
+                href="doc/CV_Albert.pdf"
+                download="Albert_CV.pdf"
+                >The full story, in my CV
+                <svg class="icon" aria-hidden="true">
+                  <use href="#download" /></svg
+              ></a>
+            </div>
+            <div class="experience-list">
+              <article class="experience-row reveal">
+                <div class="experience-meta">
+                  <span>Feb 2026 — Present</span
+                  ><span class="current-label"
+                    ><i aria-hidden="true"></i> CURRENT</span
+                  >
+                </div>
+                <div class="experience-role">
+                  <h3>Software Engineer</h3>
+                  <span>Tiar.ai <span class="location">/ Jakarta</span></span>
+                </div>
+                <p>
+                  Building backend APIs and microservices for EV charging
+                  operations. Connecting authentication, SSE, WebSockets, and
+                  notifications for real-time workflows.
+                </p>
+                <div class="experience-tags">
+                  Backend systems <span>·</span> Microservices
+                  <span>·</span> Real-time communication
+                </div>
+              </article>
+              <article class="experience-row reveal">
+                <div class="experience-meta">
+                  <span>Nov 2025 — Feb 2026</span>
+                </div>
+                <div class="experience-role">
+                  <h3>Backend Engineer Intern</h3>
+                  <span>Rakamin <span class="location">/ Remote</span></span>
+                </div>
+                <p>
+                  Developed REST APIs and backend features with Ruby on Rails
+                  and JavaScript. Identified and fixed application security
+                  vulnerabilities.
+                </p>
+                <div class="experience-tags">
+                  Ruby on Rails <span>·</span> REST APIs <span>·</span> Security
+                </div>
+              </article>
+              <article class="experience-row reveal">
+                <div class="experience-meta">
+                  <span>Jul 2025 — Sep 2025</span>
+                </div>
+                <div class="experience-role">
+                  <h3>Backend Engineer Intern</h3>
+                  <span>Makmur.id <span class="location">/ Jakarta</span></span>
+                </div>
+                <p>
+                  Worked on Redis and in-memory caching, event-driven
+                  microservices, API integrations, and automation scripts.
+                </p>
+                <div class="experience-tags">
+                  Redis <span>·</span> Event-driven architecture
+                  <span>·</span> API integration
+                </div>
+              </article>
+              <article class="experience-row reveal">
+                <div class="experience-meta">
+                  <span>Jul 2024 — Nov 2024</span>
+                </div>
+                <div class="experience-role">
+                  <h3>Software Engineer</h3>
+                  <span
+                    >Fata Organa <span class="location">/ Remote</span></span
+                  >
+                </div>
+                <p>
+                  Collaborated in a five-person team on an online meeting
+                  application using .NET and Next.js, including reporting
+                  features and a customer dashboard.
+                </p>
+                <div class="experience-tags">
+                  Intern, Jul–Sep <span>·</span> Part-time, Oct–Nov
+                  <span>·</span> .NET &amp; Next.js
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="section container"
+        aria-labelledby="about-title"
+      >
+        <div class="section-top reveal">
+          <p class="section-index">03 <span>/</span> BEYOND THE CODE</p>
+          <p class="section-note">Always a work in progress.</p>
+        </div>
+        <div class="about-layout">
+          <div class="about-heading reveal">
+            <h2 id="about-title">
+              An engineer.<br />A curious mind<span class="sage">.</span>
+            </h2>
           </div>
           <div class="about-copy">
-            <p>
-              I am a motivated student at the ITB School of Electrical
-              Engineering and Informatics with practical experience across
-              backend services, full-stack applications, and collaborative
-              engineering teams.
+            <p class="about-lead reveal">
+              I’m Albert, an Informatics Engineering graduate from
+              <strong>Institut Teknologi Bandung.</strong> I connect reliable
+              systems with thoughtful user experiences.
             </p>
-            <p>
-              My work spans API design, authentication, real-time communication,
-              event-driven systems, caching, dashboards, and application
-              security. I care about clear communication, maintainable
-              implementation, and shipping software that solves real user
-              problems.
+            <p class="reveal">
+              My work moves between APIs, databases, real-time communication,
+              and the interfaces people use every day. I care about clear
+              architecture, maintainable code, and understanding the problem
+              before reaching for the solution.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-label">Experience</p>
-            <h2>Work Experience</h2>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-date">Feb 2026 - Present</div>
-              <div class="timeline-content">
-                <h3>Backend Engineer</h3>
-                <p class="timeline-place">Tiar.ai</p>
-                <ul>
-                  <li>
-                    Develop backend APIs and microservices for a CSMS platform
-                    supporting EV charging operations and station management.
-                  </li>
-                  <li>
-                    Integrate authentication, server-sent events, WebSocket
-                    communication, and notifications for real-time mobile and
-                    backend workflows.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-date">Feb 2025 - Present</div>
-              <div class="timeline-content">
-                <h3>Programming Laboratory Assistant</h3>
-                <p class="timeline-place">Lab Programming ITB</p>
-                <ul>
-                  <li>
-                    Support programming laboratory activities, student learning,
-                    and technical guidance in an academic engineering
-                    environment.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-date">Nov 2025 - Feb 2026</div>
-              <div class="timeline-content">
-                <h3>Backend Engineer Intern</h3>
-                <p class="timeline-place">Rakamin</p>
-                <ul>
-                  <li>
-                    Built RESTful backend services using Ruby on Rails and
-                    JavaScript to support core application features and frontend
-                    integration.
-                  </li>
-                  <li>
-                    Identified and resolved security vulnerabilities, improving
-                    application reliability and security posture.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-date">Jul 2025 - Sep 2025</div>
-              <div class="timeline-content">
-                <h3>Backend Engineer Intern</h3>
-                <p class="timeline-place">Makmur</p>
-                <ul>
-                  <li>
-                    Implemented Redis and in-memory caching strategies to
-                    improve backend performance and reliability.
-                  </li>
-                  <li>
-                    Designed backend features using event-driven architecture
-                    and microservice patterns.
-                  </li>
-                  <li>
-                    Built and integrated REST APIs with external and internal
-                    services.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-date">Jul 2024 - Nov 2024</div>
-              <div class="timeline-content">
-                <h3>Full-Stack Developer Intern</h3>
-                <p class="timeline-place">Fata Organa</p>
-                <ul>
-                  <li>
-                    Worked in a team of five developers to build an online
-                    meeting application with .NET and Next.js.
-                  </li>
-                  <li>
-                    Designed and implemented a reporting system and customer
-                    dashboard to improve product visibility and decision-making.
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section muted-section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-label">Leadership</p>
-            <h2>Organizational Experience</h2>
-          </div>
-
-          <div class="org-grid">
-            <article class="org-card">
-              <span>Jul 2024 - Sep 2024</span>
-              <h3>KAT ITB 2024</h3>
-              <p class="timeline-place">Backend Developer</p>
-              <p>
-                Developed backend APIs with tRPC for submission processing,
-                score verification, and dynamic information retrieval.
-              </p>
-            </article>
-
-            <article class="org-card">
-              <span>Mar 2024 - Oct 2024</span>
-              <h3>Skill Up</h3>
-              <p class="timeline-place">Full-Stack Developer</p>
-              <p>
-                Built an e-learning web application with Next.js, Tailwind CSS,
-                TypeScript, Chakra UI, and Firebase.
-              </p>
-            </article>
-
-            <article class="org-card">
-              <span>Jan 2024 - Jul 2024</span>
-              <h3>ITB Fair 2024</h3>
-              <p class="timeline-place">Vice Director of Frontend Division</p>
-              <p>
-                Led 12 frontend developers, coordinated page integration, and
-                helped ensure a stable deployment aligned with design
-                specifications.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-label">Selected Work</p>
-            <h2>Projects</h2>
-          </div>
-
-          <div class="project-list">
-            <article class="project-row">
-              <img
-                src="images/SeaStudy.webp"
-                alt="SeaStudy educational platform screenshot"
-                loading="lazy"
-              />
+            <div class="education-row reveal" id="education">
+              <span class="small-label">EDUCATION</span>
               <div>
-                <h3>SeaStudy</h3>
-                <p>
-                  Educational platform backend with course management,
-                  authentication, progress tracking, reviews, and secure API
-                  services.
-                </p>
-                <div class="tag-list">
-                  <span>Golang</span>
-                  <span>Gin</span>
-                  <span>PostgreSQL</span>
-                  <span>Supabase</span>
-                  <span>Cloudflare R2</span>
-                </div>
-                <a
-                  class="text-link"
-                  href="https://github.com/AlbertChoe/Seatudy-Backend"
-                  target="_blank"
-                  rel="noreferrer"
-                  >View repository</a
-                >
+                <h3>Institut Teknologi Bandung</h3>
+                <p>Bachelor’s in Informatics Engineering</p>
+                <span>2022 — 2026 <i>·</i> GPA 3.65 / 4.00</span>
               </div>
-            </article>
-
-            <article class="project-row">
-              <img
-                src="images/Stima.webp"
-                alt="WikiRace game shortest path project screenshot"
-                loading="lazy"
-              />
+            </div>
+            <a
+              class="credential reveal"
+              href="https://www.credly.com/badges/40645bbd-b5d7-4b5d-8419-11febff28b92/public"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div>
-                <h3>WikiRace Game</h3>
+                <p class="small-label">AMAZON WEB SERVICES</p>
+                <h3>AWS Certified <br />AI Practitioner</h3>
+                <p>AI, machine learning &amp; generative AI foundations.</p>
+                <span>Issued Sep 2026 · Valid through Sep 2029</span
+                ><span class="credential-verify"
+                  >Verify credential
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#arrow-up" /></svg
+                ></span></div
+            ></a>
+            <details class="about-details reveal">
+              <summary>
+                Teaching, leadership &amp; recognition
+                <svg class="icon" aria-hidden="true"><use href="#plus" /></svg>
+              </summary>
+              <div class="details-content">
+                <h4>Sharing what I learn</h4>
                 <p>
-                  Web application that uses BFS and IDS algorithms to find the
-                  shortest path between Wikipedia URLs.
+                  Programming Laboratory Assistant at ITB, Feb 2025–Jun 2026.
+                  Supported labs in algorithms, data structures, object-oriented
+                  programming, web development, and mobile application
+                  development.
                 </p>
-                <div class="tag-list">
-                  <span>Next.js</span>
-                  <span>React</span>
-                  <span>Golang</span>
-                  <span>Docker</span>
-                  <span>TypeScript</span>
-                </div>
-                <a
-                  class="text-link"
-                  href="https://github.com/ChaiGans/Tubes2_BarengApin"
-                  target="_blank"
-                  rel="noreferrer"
-                  >View repository</a
-                >
-              </div>
-            </article>
-
-            <article class="project-row">
-              <img
-                src="images/Algeo2.webp"
-                alt="SnapTwins CBIR system screenshot"
-                loading="lazy"
-              />
-              <div>
-                <h3>SnapTwins</h3>
+                <h4>Building with a community</h4>
                 <p>
-                  Web-based content-based image retrieval system using color and
-                  texture extraction, camera uploads, scraping, caching, and PDF
-                  reports.
+                  Vice Director of Frontend Division at ITB Fair 2024;
+                  Full-Stack Developer at Skill Up; Backend Developer at KAT ITB
+                  2024; Frontend Web Developer at Parade Wisuda Oktober ITB
+                  2023.
                 </p>
-                <div class="tag-list">
-                  <span>Python</span>
-                  <span>Flask</span>
-                  <span>React</span>
-                  <span>Tailwind</span>
-                </div>
-                <a
-                  class="text-link"
-                  href="https://github.com/AlbertChoe/Algeo02-22055/"
-                  target="_blank"
-                  rel="noreferrer"
-                  >View repository</a
-                >
-              </div>
-            </article>
-
-            <article class="project-row">
-              <img
-                src="images/apaKek.webp"
-                alt="ApaKek fingerprint matching application screenshot"
-                loading="lazy"
-              />
-              <div>
-                <h3>ApaKek</h3>
+                <h4>A little recognition</h4>
                 <p>
-                  Fingerprint matching application using KMP, Boyer-Moore, and
-                  Levenshtein Distance for pattern recognition and similarity
-                  detection.
+                  3rd Place, IFEST Web Development Competition, Universitas
+                  Padjadjaran (2024). Beasiswa Bakti BCA scholarship recipient
+                  (2023/2024).
                 </p>
-                <div class="tag-list">
-                  <span>.NET</span>
-                  <span>WPF</span>
-                  <span>C#</span>
-                  <span>Docker</span>
-                </div>
-                <a
-                  class="text-link"
-                  href="https://github.com/AlbertChoe/Tubes3_apaKek"
-                  target="_blank"
-                  rel="noreferrer"
-                  >View repository</a
-                >
+                <h4>Continued learning</h4>
+                <p>
+                  PCAP: Programming Essentials in Python course, Cisco
+                  Networking Academy &amp; OpenEDG Python Institute (Sep–Dec
+                  2022).
+                </p>
+                <h4>Languages</h4>
+                <p>Indonesian, English, Hokkien; intermediate Chinese.</p>
               </div>
-            </article>
+            </details>
           </div>
         </div>
-      </section>
-
-      <section id="skills" class="section muted-section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-label">Capabilities</p>
-            <h2>Skills</h2>
+        <div class="toolkit reveal" id="skills">
+          <div class="toolkit-heading">
+            <p class="section-index">THE TOOLKIT</p>
+            <h3>The right tools. <br />For the right problem.</h3>
           </div>
-
-          <div class="skills-grid">
-            <article>
-              <h3>Languages</h3>
+          <div class="toolkit-columns">
+            <div>
+              <h4>Backend</h4>
               <p>
-                Golang, JavaScript, TypeScript, Ruby, Python, Java, C, C++, C#,
-                PHP, Kotlin, HTML, CSS
+                Go · Ruby · Python · SQL<br />Gin · Rails · .NET · Node.js<br />REST
+                APIs · tRPC · GraphQL
               </p>
-            </article>
-            <article>
-              <h3>Backend</h3>
+            </div>
+            <div>
+              <h4>Frontend</h4>
               <p>
-                Gin, Ruby on Rails, Express.js, Node.js, NestJS, Flask, Spring
-                Boot, Laravel, .NET, REST APIs, GraphQL
+                JavaScript · TypeScript<br />React · Next.js · Vite<br />Tailwind
+                CSS · HTML · CSS
               </p>
-            </article>
-            <article>
-              <h3>Frontend</h3>
+            </div>
+            <div>
+              <h4>Data &amp; infrastructure</h4>
               <p>
-                React, Next.js, Vite, Tailwind CSS, Chakra UI, responsive UI
-                implementation
+                PostgreSQL · MySQL · Redis<br />Docker · Kubernetes · AWS<br />Amazon
+                SQS · Cloudflare R2
               </p>
-            </article>
-            <article>
-              <h3>Data & Infrastructure</h3>
-              <p>
-                PostgreSQL, MongoDB, Redis, Docker, Kubernetes, AWS, AWS SQS,
-                Supabase, Git, Jira
-              </p>
-            </article>
-            <article>
-              <h3>Communication</h3>
-              <p>English, Indonesian, Hokkien, and intermediate Chinese</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="education" class="section">
-        <div class="container split-section">
-          <div>
-            <p class="section-label">Education & Recognition</p>
-            <h2>Academic Background</h2>
-          </div>
-          <div class="education-list">
-            <article>
-              <h3>Bandung Institute of Technology</h3>
-              <p class="timeline-place">
-                School of Electrical Engineering and Informatics - Informatics
-                Engineering
-              </p>
-              <p>
-                Bandung, Indonesia · GPA 3.62 / 4.00 · 121 credits · 2022 -
-                Present
-              </p>
-            </article>
-            <article>
-              <h3>SMAS Sutomo 1</h3>
-              <p>
-                Medan, Indonesia · Graduated with an average score of 94.4 / 100
-                and active organizational involvement.
-              </p>
-            </article>
-            <article class="award-card">
-              <h3>3rd Place - IFEST Web Development Competition</h3>
-              <p>
-                Organized by Universitas Padjadjaran. Recognized for developing
-                an innovative and functional web application with strong
-                teamwork and web engineering execution.
-              </p>
-            </article>
+            </div>
           </div>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <h2>Let's build something reliable.</h2>
-          <p>
-            Reach out for backend engineering, full-stack development, or
-            software collaboration opportunities.
-          </p>
+    <footer id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-top reveal">
+          <p class="section-index">04 <span>/</span> WHAT’S NEXT?</p>
+          <a href="#home" class="back-top"
+            >Back to top <span aria-hidden="true">↑</span></a
+          >
         </div>
-        <div class="footer-links">
-          <a href="mailto:albert.choe73@gmail.com">Email</a>
-          <a
-            href="https://www.linkedin.com/in/albertchoe2004/"
-            target="_blank"
-            rel="noreferrer"
-            >LinkedIn</a
-          >
-          <a
-            href="https://github.com/AlbertChoe"
-            target="_blank"
-            rel="noreferrer"
-            >GitHub</a
-          >
+        <div class="contact-main">
+          <h2 class="reveal">Have something<br />in mind<span>?</span></h2>
+          <div class="contact-copy reveal">
+            <p>
+              Good things start with a conversation.<br />Let’s build something
+              thoughtful together.
+            </p>
+            <a class="contact-email" href="mailto:albert.choe73@gmail.com"
+              >albert.choe73@gmail.com
+              <svg class="icon" aria-hidden="true"><use href="#arrow-up" /></svg
+            ></a>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/albertchoe2004/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn
+                <svg class="icon" aria-hidden="true">
+                  <use href="#arrow-up" /></svg></a
+              ><a
+                href="https://github.com/AlbertChoe"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub
+                <svg class="icon" aria-hidden="true">
+                  <use href="#arrow-up" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <a class="brand" href="#home">Albert<span>.</span></a>
+          <p>Thoughtfully built. Always evolving.</p>
+          <p>© <span id="year">2026</span> Albert</p>
         </div>
       </div>
-      <p class="copyright">&copy; 2026 Albert Choe. All rights reserved.</p>
     </footer>
   </body>
 </html>
